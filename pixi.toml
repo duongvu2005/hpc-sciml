@@ -1,0 +1,10 @@
+[workspace]
+authors = ["duongvu2005 <duongvu.nh05@gmail.com>"]
+channels = ["conda-forge"]
+name = "hpc-sciml"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
