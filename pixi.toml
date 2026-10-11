@@ -2,9 +2,12 @@
 authors = ["duongvu2005 <duongvu.nh05@gmail.com>"]
 channels = ["conda-forge"]
 name = "hpc-sciml"
-platforms = ["win-64"]
+platforms = [ "linux-64", "osx-64"]
 version = "0.1.0"
 
 [tasks]
+setup = "julia --project=. -e 'using Pkg; Pkg.instantiate()'"
+repl = "julia --project=. --threads=auto"
 
 [dependencies]
+julia = ">=1.13.0,<1.14"
