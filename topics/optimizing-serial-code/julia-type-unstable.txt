@@ -1,0 +1,12 @@
+=== @code_warntype ===
+MethodInstance for g_unstable(::Float32)
+  from g_unstable(x) @ Main ~/dev/hpc-sciml/topics/optimizing-serial-code/julia-code-macros.jl:7
+Arguments
+  #self#::Core.Const(Main.g_unstable)
+  x::Float32
+Body::UNION{FLOAT64, INT64}
+1 ─ %1 = Main.:<::Core.Const(<)
+│   %2 = (%1)(x, 1)::Bool
+└──      goto #3 if not %2
+2 ─      return 1
+3 ─      return 0.5
